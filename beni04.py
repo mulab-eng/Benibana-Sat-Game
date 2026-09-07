@@ -576,8 +576,6 @@ def main():
         if idx==2:   # GAMEOVER表示   
             pygame.mixer.music.stop()
             # 最終スコアの表示
-            print('Final Score: ', score)
-            print('High Score: ', highscore)
             if highscore < score: # ハイスコアの場合
                 screen.blit(img_high, [0, 0])
                 sur = font3.render(str(score), True, (255,200,255)) # 色を指定して文字str(tmr)を画像surに置き換える
